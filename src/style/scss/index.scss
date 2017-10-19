@@ -1,0 +1,36 @@
+.page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+.index-tab-footer {
+    .font-icon {
+        font-size: 20px;
+    }
+    .weui-bar__item_on {
+        .font-icon {
+            color: #09BB07;
+        }
+    }
+    p {
+        margin-top: 6px;
+    }
+}
+.weui-tab__panel {
+    padding: 15px 15px 60px 15px;
+}
+.team-score,
+.best-speaker {
+    &-icon-container {
+        margin-top: 20%;
+        text-align: center;
+        div {
+            margin-top: 1em;
+        }
+    }
+}

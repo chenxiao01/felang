@@ -1,12 +1,16 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+    <div id="app" class="page">
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  mounted() {
+    if (!localStorage.getItem('user')) {
+        this.$router.push('/');
+    }
+  }
 }
 </script>
 
